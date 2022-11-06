@@ -4,6 +4,10 @@ public class Child {
     private String name;
     private Apple apple;
 
+    public Child() {
+        System.out.println("正在创建Child对象："+this);
+    }
+
     public String getName() {
         return name;
     }
@@ -17,6 +21,7 @@ public class Child {
     }
 
     public void setApple(Apple apple) {
+        System.out.println("注入的Apple对象"+apple);
         this.apple = apple;
     }
 }

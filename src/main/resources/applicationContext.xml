@@ -8,4 +8,9 @@
         <property name="color" value="红色"/>
         <property name="origin" value="中国"/>
     </bean>
+<!--    利用setter实现对象注入-->
+    <bean id="lily" class="com.zy.spring.ioc.entity.Child">
+        <property name="name" value="丽丽"/>
+        <property name="apple" ref="sweetApple"/>
+    </bean>
 </beans>
