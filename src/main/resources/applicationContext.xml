@@ -8,9 +8,23 @@
         <property name="color" value="红色"/>
         <property name="origin" value="中国"/>
     </bean>
+    <bean id="sourApple" class="com.zy.spring.ioc.entity.Apple">
+        <property name="title" value="金苹果"/>
+        <property name="color" value="红色"/>
+        <property name="origin" value="中国"/>
+    </bean>
 <!--    利用setter实现对象注入-->
     <bean id="lily" class="com.zy.spring.ioc.entity.Child">
         <property name="name" value="丽丽"/>
         <property name="apple" ref="sweetApple"/>
+    </bean>
+<!--构造方法注入对象-->
+    <bean id="zhangsan" class="com.zy.spring.ioc.entity.Child">
+        <constructor-arg name="name" value="张三"/>
+        <constructor-arg name="apple" ref="sweetApple"/>
+    </bean>
+    <bean id="lisi" class="com.zy.spring.ioc.entity.Child">
+        <constructor-arg name="name" value="李四"/>
+        <constructor-arg name="apple" ref="sourApple"/>
     </bean>
 </beans>

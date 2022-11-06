@@ -48,4 +48,5 @@ public class Apple {
     public void setPrice(Float price) {
         this.price = price;
     }
+
 }
