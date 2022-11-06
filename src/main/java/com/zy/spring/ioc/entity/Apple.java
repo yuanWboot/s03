@@ -19,6 +19,7 @@ public class Apple {
     }
 
     public void setTitle(String title) {
+        System.out.println("title属性设置为："+title);
         this.title = title;
     }
 
